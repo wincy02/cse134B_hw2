@@ -6,8 +6,8 @@
 </head>
 <link rel="stylesheet" href="styles.css">
 <style>
-    body{
-        background-color: beige;
+    h2{
+        color: burlywood;
     }
 </style>
 <title>
@@ -20,18 +20,25 @@
 <h1>heading 1</h1>
 <h2>heading 2</h2>
 <h3>heading 3</h3>
-<ul>
-    <button>display preference</button> 
-</ul>
-<ul>
-    <button>&#127926; </button>
-</ul>
+<button>display preference</button> 
+<button>&#127926; </button>
+
 <p>Here is the video tag</p>
 <video width="320" height="240" controls>
     <source src="video.mp4" type="video/mp4">
 
   </video>
 <nav>
+    <ul>
+        <li>video tag</li>
+        <li>audio tag</li>
+        <li>article tag</li>
+        <li>aside tag</li>
+        <li><a href="#section1">form, input, textarea and label tags</a></li>
+        <li><a href="exp.html">other tags</a></li>
+
+    </ul>
+
  
 
 </nav>
@@ -43,7 +50,7 @@
     <source src="bgm.mp3" type="audio/mpeg">
     </audio>
 
-    <section> </section>
+    
 
 </main>
 <article>
@@ -67,28 +74,33 @@
 
 </article>
 
-<h2>The form, input, textarea and label tags</h2>
-<form>
-    <label>First name:</label>
-    <input type="text"> <br>
-    <label>Last name: </label>
-    <input type="text"><br><br>
+<section id="section1">
+    <h2>The form, input, textarea and label tags</h2>
+    <form>
+        <label>First name:</label>
+        <input type="text"> <br>
+        <label>Last name: </label>
+        <input type="text"><br><br>
+    
+        <textarea>You can leave a comment here </textarea>
+    
+    </form>
+     
 
-    <textarea>You can leave a comment here </textarea>
+</section>
 
-</form>
 <hr>
 <h4>The iframe element</h4>
 <iframe src="https://www.google.com" title="google"></iframe>
 
 
 <div>
-    <span></span>
-    <code></code>
-    <i></i>
-    <img>
-    <picture></picture>
-    <a></a>
+    <p>the <code>div</code> tag is a <i>block</i> element,where <span><code>span</code> tag
+    is an <i>inline</i></iinline> element</span></div></p>
+
+
+
+ 
 </div>
 <h4>The pre element</h4>
 <pre>
@@ -98,14 +110,31 @@
     and line breaks.
     
 </pre>
+<hr>
+<h4>The canvas tag</h4>
+<canvas id="canvasTag"></canvas>
 
+
+
+<script>
+    const c = document.getElementById("canvasTag");
+    const c_context= c.getContext("2d");
+    const x1=100,x2=200,x3=300, y1=300,y2=100,y3=300;
+    c_context.fillStyle ="blue";
+    c_context.beginPath();
+    c_context.moveTo(x1,y1);
+    c_context.lineTo(x2,y2);
+    c_context.lineTo(x3,y3);
+    c_context.closePath();
+    c_context.fill();
+    c_context.fillStyle="green";
+    c_context.fillRect(30,30,75,50);
+    c_context.globalAlpha=0.3;
+</script>
 
 <footer>
     <p>author: ABCD</p>
 
 </footer>
-<script></script>
-
-
 </body>
 </html>

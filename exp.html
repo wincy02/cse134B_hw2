@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<style>
+    table,th,td{
+        border:1px solid black;
+    }
+</style>
+<html>
+    <ol>
+        <li>img tag</li>
+        <li>picture tag</li>
+        <li>svg tag</li>
+    </ol>
+    <body>
+        <h4>The img tag</h4>
+        <img src="img.jpg" alt="google icon">
+        <h4>The picture tag</h4>
+        <picture>
+            <source media="(max-width:640px)" srcset="tree.png">
+            <img src="pokemon.png" alt="pokemon" style="width:auto;">
+        </picture>
+        <h4>The svg tag</h4>
+        <svg width="80" height="80">
+            <circle cx="30" cy="30" r="20" fill="blue"></circle>
+        </svg>
+
+        <main>
+            <h4>The legend tag</h4>
+            <fieldset>
+                <legend>Basic information:</legend>
+                <label for="birthday">Choose your birth month:</label>
+                <input list="birthday">
+                <datalist id="birthday">
+                    <option value="January">
+                    <option value="Febuary">
+                    <option value="March">
+                    <option value="April">
+                    <option value="May">
+                    <option value="June">
+                    <option value="July">
+                    <option value="August">
+                    <option value="September">
+                    <option value="October">
+                    <option value="November">
+                    <option value="December">
+                </datalist>
+               
+                <br>
+                <label for="fruits">Choose your favorite fruits:</label>
+                <select id="fruits">
+                    <optgroup label="berries">
+                        <option value="Blackberry">Blackberries</option>
+                        <option value="strawberry">Strawberries</option>
+                        <option value="grape">Grape</option>
+                    </optgroup>
+                    <optgroup label="melons">
+                        <option value="watermelon">Watermelon</option>
+                    </optgroup>
+                    <optgroup label="tropical">
+                        <option value="mango">Mangos</option>
+                        <option value="pineapple">Pineapples</option>    
+                    </optgroup>
+                </select><br>
+                <input type="submit">
+
+            </fieldset>
+            <hr>
+            <h4>The details tag</h4>
+            <details>
+                <summary>Halloween</summary>
+                <p>Halloween is a holiday that marks the day before the Western Christian feast of All Saints, or All Hallows, and initiates the season of Allhallowtide. </p>
+                
+            </details>
+      
+            <button>Show hidden content -template tag-</button>
+            <template>
+                <p>Halloween holiday has its roots in the ancient 
+                        Celtic festival of Samhain (a Gaelic word pronounced “SAH-win”), 
+                        a pagan religious celebration to welcome the harvest at the end of summer, 
+                        when people would light bonfires and wear costumes to ward off ghosts.</p>
+                <img src="halloween.png" width="50" height="40">
+            </template>
+            <h4>The table tag</h4>
+            <table>
+                <caption>The courses you have taken</caption>
+                <colgroup>
+                <col style="background-color: aqua;">
+            </colgroup>
+                <tr>
+                    <th>Department</th>
+                    <th>Course number</th>
+                </tr>
+                <tr>
+                    <td>CSE</td>
+                    <td>110</td>
+                </tr>
+                <tr>
+                    <td>COGS</td>
+                    <td>185</td>
+                </tr>
+                <tr>
+                    <td>CSE</td>
+                    <td>134B</td>
+                </tr>
+            </table>
+            <hr>
+            <h4>The figure tag</h4>
+            <figure>
+                <img src="louvre.png" alt="the louvre">
+                <figcaption>The Louvre Museum, a national art museum in Paris, France</figcaption>
+            </figure>
+
+
+        
+        </main>
+    </body>
+
+    
+
+</html>
